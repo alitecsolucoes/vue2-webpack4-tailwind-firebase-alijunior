@@ -1,4 +1,4 @@
-# Gestor para Arrecadações AME
+# Base Project - Boilerplate - Vue 2 + Webpack 4 + TailwindCSS + Firebase
 
 -------------------------
 

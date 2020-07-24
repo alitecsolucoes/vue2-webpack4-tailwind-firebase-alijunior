@@ -1,0 +1,69 @@
+{
+  "name": "alitec-ame-gestor",
+  "version": "0.2.0",
+  "description": "Gestor para Arrecadações AME",
+  "productName": "AME Gestor",
+  "author": "ALITEC Soluções <alitecsolucoes@gmail.com>",
+  "private": true,
+  "scripts": {
+    "rimraf": "cls && rimraf dist && echo Starting webpack build....",
+    "tail": "npx tailwindcss build src/assets/css/tailwind/custom.css -o src/assets/css/tail.css",
+    "dev": "cls && cross-env NODE_ENV=development webpack-dev-server --inline --progress --mode development --config './_config/webpack.config.js'",
+    "build": "npm run rimraf && cross-env NODE_ENV=production webpack --mode production --config './_config/webpack.config.js'"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.5.2",
+    "firebase": "^7.16.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^3.0.7",
+    "url-loader": "^4.1.0",
+    "vue-loader": "^15.9.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alitecsolucoes/alitec-ame-gestor.git"
+  },
+  "keywords": [
+    "vue",
+    "webpack",
+    "tailwindcss",
+    "firebase"
+  ],
+  "none": {
+    "babel-eslint": "^10.1.0",
+    "html-loader": "^1.1.0",
+    "eslint": "^7.5.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^6.2.2"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alitecsolucoes/alitec-ame-gestor/issues"
+  },
+  "homepage": "https://github.com/alitecsolucoes/alitec-ame-gestor#readme"
+}
